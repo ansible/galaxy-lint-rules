@@ -1,22 +1,5 @@
-# Copyright (c) 2013-2014 Will Thames <will@thames.id.au>
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-# THE SOFTWARE.
+# Copyright (c) 2018 Ansible, Inc.
+# All Rights Reserved.
 
 import re
 import six
@@ -40,9 +23,10 @@ class UsingBareVariablesIsDeprecatedRule(AnsibleLintRule):
                           if key.startswith("with_")), None)
         if loop_type:
             if loop_type in ["with_nested", "with_together", "with_flattened"]:
-                # These loops can either take a list defined directly in the task
-                # or a variable that is a list itself.  When a single variable is used
-                # we just need to check that one variable, and not iterate over it like
+                # These loops can either take a list defined directly in the
+                # task or a variable that is a list itself.  When a
+                # single variable is used we just need to check that
+                # one variable, and not iterate over it like
                 # it's a list. Otherwise, loop through and check all items.
                 items = task[loop_type]
                 if not isinstance(items, (list, tuple)):

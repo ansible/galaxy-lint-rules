@@ -1,3 +1,6 @@
+# Copyright (c) 2018 Ansible, Inc.
+# All Rights Reserved.
+
 from ansiblelint import AnsibleLintRule
 try:
     from types import StringTypes

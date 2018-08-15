@@ -1,5 +1,9 @@
+# Copyright (c) 2018 Ansible, Inc.
+# All Rights Reserved.
+
 from ansiblelint import AnsibleLintRule
 import os
+
 
 class ModuleTemplateExt(AnsibleLintRule):
     id = 'GALAXYTEST406'

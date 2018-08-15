@@ -1,4 +1,8 @@
+# Copyright (c) 2018 Ansible, Inc.
+# All Rights Reserved.
+
 from ansiblelint import AnsibleLintRule
+
 
 class ShellAltPatch(AnsibleLintRule):
     id = 'GALAXYTEST306'
