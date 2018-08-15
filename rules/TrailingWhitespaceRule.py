@@ -22,7 +22,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class TrailingWhitespaceRule(AnsibleLintRule):
-    id = 'ANSIBLE0002'
+    id = 'GALAXYTEST201'
     shortdesc = 'Trailing whitespace'
     description = 'There should not be any trailing whitespace'
     tags = ['formatting']

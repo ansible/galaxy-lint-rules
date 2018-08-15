@@ -2,7 +2,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class SudoRule(AnsibleLintRule):
-    id = 'ANSIBLE0008'
+    id = 'GALAXYTEST101'
     shortdesc = 'Deprecated sudo'
     description = 'Instead of sudo/sudo_user, use become/become_user.'
     tags = ['deprecated']

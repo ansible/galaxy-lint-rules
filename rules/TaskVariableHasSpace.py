@@ -3,10 +3,11 @@ from ansiblelint import AnsibleLintRule
 import re
 
 class TaskVariableHasSpace(AnsibleLintRule):
-    id = 'E305'
+    id = 'GALAXYTEST205'
     shortdesc = 'Variables should be enclosed by spaces "{{ foo }}"'
     description = ''
-    tags = ['task']
+    # tags = ['task']
+    tags = ['formatting']
 
     compiled = re.compile(r'{{(\w*)}}')
 

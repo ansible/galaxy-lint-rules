@@ -35,11 +35,12 @@ except ImportError:
 
 
 class CommandsInsteadOfModulesRule(AnsibleLintRule):
-    id = 'ANSIBLE0006'
+    id = 'GALAXYTEST301'
     shortdesc = 'Using command rather than module'
     description = 'Executing a command when there is an Ansible module ' + \
                   'is generally a bad idea'
-    tags = ['resources']
+    # tags = ['resources']
+    tags = ['command-shell']
 
     _commands = ['command', 'shell']
     _modules = {'git': 'git', 'hg': 'hg', 'curl': 'get_url or uri', 'wget': 'get_url or uri',

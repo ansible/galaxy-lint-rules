@@ -3,7 +3,7 @@ import re
 
 
 class ComparisonToLiteralBoolRule(AnsibleLintRule):
-    id = 'EXTRA0014'
+    id = 'GALAXYTEST601'
     shortdesc = "Don't compare to literal True/False"
     description = 'Use `when: var` rather than `when: var == True` ' \
                   '(or conversely `when: not var`)'

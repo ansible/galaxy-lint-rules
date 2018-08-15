@@ -35,11 +35,12 @@ except ImportError:
 
 
 class CommandsInsteadOfArgumentsRule(AnsibleLintRule):
-    id = 'ANSIBLE0007'
+    id = 'GALAXYTEST302'
     shortdesc = 'Using command rather than an argument to e.g. file'
     description = 'Executing a command when there is are arguments to modules ' + \
                   'is generally a bad idea'
-    tags = ['resources']
+    # tags = ['resources']
+    tags = ['command-shell']
 
     _commands = ['command', 'shell', 'raw']
     _arguments = {'chown': 'owner', 'chmod': 'mode', 'chgrp': 'group',

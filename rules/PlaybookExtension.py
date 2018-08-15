@@ -3,10 +3,11 @@ from ansiblelint import AnsibleLintRule
 import os
 
 class PlaybookExtension(AnsibleLintRule):
-    id = 'E101'
+    id = 'GALAXYTEST207'
     shortdesc = 'Playbooks should have the ".yml" extension'
     description = ''
-    tags = ['playbook']
+    # tags = ['playbook']
+    tags = ['formatting']
     done = []  # already noticed path list
 
     def match(self, file, text):

@@ -4,10 +4,11 @@ from ansiblelint import AnsibleLintRule
 format = "{}"
 
 class RoleRelativePath(AnsibleLintRule):
-    id = 'E201'
+    id = 'GALAXYTEST405'
     shortdesc = "Doesn't need a relative path in role"
     description = ''
-    tags = ['role']
+    # tags = ['role']
+    tags = ['module']
 
     def matchplay(self, file, play):
         # assume if 'roles' in path, inside a role.
@@ -39,4 +40,3 @@ class RoleRelativePath(AnsibleLintRule):
                 return ({'sudo': play['win_copy']},
                                 self.shortdesc)
         return []
-

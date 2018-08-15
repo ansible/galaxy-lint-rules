@@ -2,7 +2,7 @@ from ansiblelint import AnsibleLintRule
 import os
 
 class ModuleTemplateExt(AnsibleLintRule):
-    id = 'E402'
+    id = 'GALAXYTEST406'
     shortdesc = "Template files should have the extension '.j2' "
     description = ''
     tags = ['module']

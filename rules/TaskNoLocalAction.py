@@ -1,7 +1,7 @@
 from ansiblelint import AnsibleLintRule
 
 class TaskNoLocalAction(AnsibleLintRule):
-    id = 'E304'
+    id = 'GALAXYTEST504'
     shortdesc = 'Do not use local_action. use delegate_to: localhost instead'
     description = ''
     tags = ['task']
