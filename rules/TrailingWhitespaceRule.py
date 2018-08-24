@@ -5,7 +5,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class TrailingWhitespaceRule(AnsibleLintRule):
-    id = 'GALAXYTEST201'
+    id = '201'
     shortdesc = 'Trailing whitespace'
     description = 'There should not be any trailing whitespace'
     tags = ['formatting']

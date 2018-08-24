@@ -8,10 +8,9 @@ format = "{}"
 
 
 class RoleRelativePath(AnsibleLintRule):
-    id = 'GALAXYTEST405'
+    id = '405'
     shortdesc = "Doesn't need a relative path in role"
     description = ''
-    # tags = ['role']
     tags = ['module']
 
     def matchplay(self, file, play):

@@ -5,7 +5,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class AlwaysRunRule(AnsibleLintRule):
-    id = 'GALAXYTEST103'
+    id = '103'
     shortdesc = 'Deprecated always_run'
     description = 'Instead of always_run, use check_mode.'
     tags = ['deprecated']

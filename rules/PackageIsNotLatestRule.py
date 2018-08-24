@@ -5,11 +5,10 @@ from ansiblelint import AnsibleLintRule
 
 
 class PackageIsNotLatestRule(AnsibleLintRule):
-    id = 'GALAXYTEST404'
+    id = '404'
     shortdesc = 'Package installs should not use latest'
     description = 'Package installs should use state=present ' + \
                   'with or without a version'
-    # tags = ['repeatability']
     tags = ['module']
 
     _package_managers = ['yum', 'apt', 'dnf', 'homebrew', 'pacman', 'pkg5',

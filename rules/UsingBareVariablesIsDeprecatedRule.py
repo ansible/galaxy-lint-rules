@@ -7,12 +7,11 @@ from ansiblelint import AnsibleLintRule
 
 
 class UsingBareVariablesIsDeprecatedRule(AnsibleLintRule):
-    id = 'GALAXYTEST102'
+    id = '102'
     shortdesc = 'Using bare variables is deprecated'
     description = 'Using bare variables is deprecated. Update your ' + \
         'playbooks so that the environment value uses the full variable ' + \
         'syntax ("{{your_variable}}").'
-    # tags = ['formatting', 'deprecated']
     tags = ['deprecated']
 
     _jinja = re.compile("\{\{.*\}\}")

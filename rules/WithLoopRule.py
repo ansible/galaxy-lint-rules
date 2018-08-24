@@ -5,7 +5,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class WithLoopRule(AnsibleLintRule):
-    id = 'GALAXYTEST106'
+    id = '106'
     shortdesc = 'Deprecated with_X for loops'
     description = """With the release of Ansible 2.5, the recommended way to
     perform loops is to use the new loop keyword instead of with_X style loops
@@ -15,4 +15,4 @@ class WithLoopRule(AnsibleLintRule):
     tags = ['deprecated']
 
     def matchtask(self, file, task):
-        return ' with_' in task
+        return any(s.startswith('with_') for s in task.keys())

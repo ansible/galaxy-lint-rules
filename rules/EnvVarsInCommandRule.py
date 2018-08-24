@@ -6,11 +6,10 @@ from ansiblelint.utils import LINE_NUMBER_KEY, FILENAME_KEY
 
 
 class EnvVarsInCommandRule(AnsibleLintRule):
-    id = 'GALAXYTEST305'
+    id = '305'
     shortdesc = "Environment variables don't work as part of command"
     description = 'Environment variables should be passed to shell or ' \
                   'command through environment argument'
-    # tags = ['bug']
     tags = ['command-shell']
 
     expected_args = ['chdir', 'creates', 'executable',

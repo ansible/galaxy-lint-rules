@@ -5,10 +5,9 @@ from ansiblelint import AnsibleLintRule
 
 
 class ShellAltPatch(AnsibleLintRule):
-    id = 'GALAXYTEST306'
+    id = '306'
     shortdesc = 'Use patch module'
     description = ''
-    # tags = ['shell']
     tags = ['command-shell']
 
     def matchtask(self, file, task):

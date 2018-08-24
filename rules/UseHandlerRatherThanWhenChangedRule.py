@@ -12,11 +12,10 @@ def _changed_in_when(item):
 
 
 class UseHandlerRatherThanWhenChangedRule(AnsibleLintRule):
-    id = 'GALAXYTEST503'
+    id = '503'
     shortdesc = 'Tasks that run when changed should likely be handlers'
     description = "If a task has a `when: result.changed` setting, it's " \
                   "effectively acting as a handler"
-    # tags = ['behaviour']
     tags = ['task']
 
     def matchtask(self, file, task):

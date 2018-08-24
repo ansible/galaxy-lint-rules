@@ -7,10 +7,9 @@ import os
 
 
 class PlaybookExtension(AnsibleLintRule):
-    id = 'GALAXYTEST207'
+    id = '207'
     shortdesc = 'Playbooks should have the ".yml" extension'
     description = ''
-    # tags = ['playbook']
     tags = ['formatting']
     done = []  # already noticed path list
 

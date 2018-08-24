@@ -18,11 +18,10 @@ except ImportError:
 
 
 class CommandsInsteadOfArgumentsRule(AnsibleLintRule):
-    id = 'GALAXYTEST302'
+    id = '302'
     shortdesc = 'Using command rather than an argument to e.g. file'
     description = 'Executing a command when there is are arguments to ' + \
                   'modules is generally a bad idea'
-    # tags = ['resources']
     tags = ['command-shell']
 
     _commands = ['command', 'shell', 'raw']

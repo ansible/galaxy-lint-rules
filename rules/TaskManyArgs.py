@@ -5,10 +5,9 @@ from ansiblelint import AnsibleLintRule
 
 
 class TaskManyArgs(AnsibleLintRule):
-    id = 'GALAXYTEST206'
+    id = '206'
     shortdesc = 'Use ":" YAML format when arguments are over 4'
     description = ''
-    # tags = ['task']
     tags = ['formatting']
 
     def match(self, file, text):

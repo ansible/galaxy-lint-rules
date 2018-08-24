@@ -10,12 +10,11 @@ def unjinja(text):
 
 
 class UseCommandInsteadOfShellRule(AnsibleLintRule):
-    id = 'GALAXYTEST304'
+    id = '304'
     shortdesc = 'Use shell only when shell functionality is required'
     description = 'Shell should only be used when piping, redirecting ' \
                   'or chaining commands (and Ansible would be preferred ' \
                   'for some of those!)'
-    # tags = ['safety']
     tags = ['command-shell']
 
     def matchtask(self, file, task):

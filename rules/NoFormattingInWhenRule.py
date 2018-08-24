@@ -10,7 +10,7 @@ except ImportError:
 
 
 class NoFormattingInWhenRule(AnsibleLintRule):
-    id = 'GALAXYTEST104'
+    id = '104'
     shortdesc = 'No Jinja2 in when'
     description = '"when" lines should not include Jinja2 variables'
     tags = ['deprecated']

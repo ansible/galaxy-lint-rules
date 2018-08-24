@@ -18,11 +18,10 @@ except ImportError:
 
 
 class CommandsInsteadOfModulesRule(AnsibleLintRule):
-    id = 'GALAXYTEST301'
+    id = '301'
     shortdesc = 'Using command rather than module'
     description = 'Executing a command when there is an Ansible module ' + \
                   'is generally a bad idea'
-    # tags = ['resources']
     tags = ['command-shell']
 
     _commands = ['command', 'shell']
