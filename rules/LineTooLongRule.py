@@ -5,7 +5,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class LineTooLongRule(AnsibleLintRule):
-    id = '204'
+    id = '204GAL'
     shortdesc = 'Lines should be no longer than 100 chars'
     description = 'Long lines make code harder to read and ' \
                   'code review more difficult'

@@ -5,7 +5,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class CommandHasChangesCheckRule(AnsibleLintRule):
-    id = '303'
+    id = '301'
     shortdesc = 'Commands should not change things if nothing needs doing'
     description = 'Commands should either read information (and thus set ' \
                   'changed_when) or not do something if it has already been ' \

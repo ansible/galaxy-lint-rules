@@ -6,7 +6,7 @@ import re
 
 
 class ComparisonToEmptyStringRule(AnsibleLintRule):
-    id = '602'
+    id = '602GAL'
     shortdesc = "Don't compare to empty string"
     description = 'Use `when: var` rather than `when: var != ""` (or ' \
                   'conversely `when: not var` rather than `when: var == ""`)'

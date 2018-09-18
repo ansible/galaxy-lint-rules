@@ -5,7 +5,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class WithLoopRule(AnsibleLintRule):
-    id = '106'
+    id = '105GAL'
     shortdesc = 'Deprecated with_X for loops'
     description = """With the release of Ansible 2.5, the recommended way to
     perform loops is to use the new loop keyword instead of with_X style loops
