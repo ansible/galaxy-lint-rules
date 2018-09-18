@@ -10,7 +10,7 @@ def unjinja(text):
 
 
 class UseCommandInsteadOfShellRule(AnsibleLintRule):
-    id = '304'
+    id = '305'
     shortdesc = 'Use shell only when shell functionality is required'
     description = 'Shell should only be used when piping, redirecting ' \
                   'or chaining commands (and Ansible would be preferred ' \

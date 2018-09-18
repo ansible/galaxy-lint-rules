@@ -5,7 +5,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class StateIsPresentRule(AnsibleLintRule):
-    id = '407'
+    id = '406GAL'
     shortdesc = 'Recommended to mention the state'
     description = '''
     The 'state' parameter is optional to a lot of modules.

@@ -5,7 +5,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class ShellAltPatch(AnsibleLintRule):
-    id = '306'
+    id = '306GAL'
     shortdesc = 'Use patch module'
     description = ''
     tags = ['command-shell']
