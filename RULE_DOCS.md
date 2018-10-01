@@ -12,7 +12,7 @@
 | E201                                                        | Trailing whitespace                                         |
 | E202                                                        | Octal file permissions must contain leading zero            |
 | E203GAL                                                     | Most files should not contain tabs                          |
-| E204GAL                                                     | Lines should be no longer than 100 chars                    |
+| E204GAL                                                     | Lines should be no longer than 160 chars                    |
 | E205GAL                                                     | Variables should be enclosed by spaces "{{ foo }}"          |
 | E206GAL                                                     | Use ":" YAML format when arguments are over 4               |
 | E207GAL                                                     | Playbooks should have the ".yml" extension                  |
