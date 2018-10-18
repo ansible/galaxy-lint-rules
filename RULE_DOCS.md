@@ -32,7 +32,6 @@
 | E403                                                        | Package installs should not use latest                      |
 | E404GAL                                                     | Doesn't need a relative path in role                        |
 | E405GAL                                                     | Template files should have the extension '.j2'              |
-| E406GAL                                                     | Recommended to mention the state                            |
 |                                                             |                                                             |
 | **E5**                                                      | *task*                                                      |
 | E501                                                        | become_user requires become to work as expected             |
@@ -43,3 +42,10 @@
 | **E6**                                                      | *idiom*                                                     |
 | E601GAL                                                     | Don't compare to literal True/False                         |
 | E602GAL                                                     | Don't compare to empty string                               |
+|                                                             |                                                             |
+| **E7**                                                      | *metadata*                                                  |
+| E701GAL                                                     | meta/main.yml should contain relevant info                  |
+| E702GAL                                                     | Tags must contain lowercase letters and digits only         |
+| E703GAL                                                     | meta/main.yml default values should be changed              |
+| E704GAL                                                     | Expected 'license' to be a valid SPDX license ID            |
+| E705GAL                                                     | meta/main.yml video_links should be formatted correctly     |
