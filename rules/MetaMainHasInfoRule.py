@@ -5,8 +5,7 @@ class MetaMainHasInfoRule(AnsibleLintRule):
     id = '701GAL'
     shortdesc = 'meta/main.yml should contain relevant info'
     info = ['author', 'description', 'company',
-            'license', 'min_ansible_version',
-            'platforms', 'galaxy_tags']
+            'license', 'min_ansible_version', 'platforms']
     description = 'meta/main.yml should contain: ' + ', '.join(info)
     tags = ['metadata']
 
