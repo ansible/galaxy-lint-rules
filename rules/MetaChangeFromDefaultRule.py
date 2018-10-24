@@ -8,7 +8,7 @@ class MetaChangeFromDefaultRule(AnsibleLintRule):
         ('author', 'your name'),
         ('description', 'your description'),
         ('company', 'your company (optional)'),
-        ('license', 'your license'),
+        ('license', 'license (GPLv2, CC-BY, etc)'),
     ]
     description = ('meta/main.yml default values should be changed for: ' +
                    ', '.join([f[0] for f in field_defaults]))
