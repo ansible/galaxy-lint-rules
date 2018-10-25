@@ -47,5 +47,4 @@
 | E701GAL                                                     | meta/main.yml should contain relevant info                  |
 | E702GAL                                                     | Tags must contain lowercase letters and digits only         |
 | E703GAL                                                     | meta/main.yml default values should be changed              |
-| E704GAL                                                     | Expected 'license' to be a valid SPDX license ID            |
-| E705GAL                                                     | meta/main.yml video_links should be formatted correctly     |
+| E704GAL                                                     | meta/main.yml video_links should be formatted correctly     |
