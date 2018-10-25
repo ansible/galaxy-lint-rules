@@ -6,3 +6,12 @@ This repository contains custom [Ansible Lint rules](https://github.com/willtham
 Rules
 -----
 see [RULE_DOCS.md](RULE_DOCS.md)
+
+Usage
+-----
+
+This guide assumes you have an Ansible role available locally, e.g. in `roles/example.rolename`.
+
+  1. Install Ansible Lint: `pip install ansible-lint`
+  1. Clone this repo: `git clone git@github.com:ansible/galaxy-lint-rules.git`
+  1. Run Ansible Lint using the galaxy-lint-rules: `ansible-lint -r galaxy-lint-rules/rules roles/example.rolename`
