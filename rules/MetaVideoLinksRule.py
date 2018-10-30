@@ -4,7 +4,7 @@ import six
 
 
 class MetaVideoLinksRule(AnsibleLintRule):
-    id = '704GAL'
+    id = '704'
     shortdesc = "meta/main.yml video_links should be formatted correctly"
     description = ("Items in 'video_links' in meta/main.yml should be "
                    "dictionaries, and contain only keys 'url' and 'title', "
