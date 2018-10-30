@@ -8,7 +8,7 @@ format = "{}"
 
 
 class RoleRelativePath(AnsibleLintRule):
-    id = '404GAL'
+    id = '404'
     shortdesc = "Doesn't need a relative path in role"
     description = ''
     tags = ['module']

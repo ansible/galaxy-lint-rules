@@ -2,7 +2,7 @@ from ansiblelint import AnsibleLintRule
 
 
 class MetaChangeFromDefaultRule(AnsibleLintRule):
-    id = '703GAL'
+    id = '703'
     shortdesc = 'meta/main.yml default values should be changed'
     field_defaults = [
         ('author', 'your name'),

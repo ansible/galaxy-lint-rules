@@ -6,7 +6,7 @@ import re
 
 
 class MetaTagValidRule(AnsibleLintRule):
-    id = '702GAL'
+    id = '702'
     shortdesc = 'Tags must contain lowercase letters and digits only'
     description = ("Tags must contain lowercase letters and digits only, "
                    "and 'galaxy_tags' is expected to be a list")
