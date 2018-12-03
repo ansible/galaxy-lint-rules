@@ -11,10 +11,34 @@ class PackageIsNotLatestRule(AnsibleLintRule):
                   'with or without a version'
     tags = ['module']
 
-    _package_managers = ['yum', 'apt', 'dnf', 'homebrew', 'pacman', 'pkg5',
-                         'openbsd_package', 'portage', 'pkgutil', 'slackpkg',
-                         'swdepot', 'zypper', 'bundler', 'pip', 'pear',
-                         'npm', 'gem', 'easy_install', 'bower', 'package']
+    _package_managers = [
+        'apk',
+        'apt',
+        'bower',
+        'bundler',
+        'dnf',
+        'easy_install',
+        'gem',
+        'homebrew',
+        'jenkins_plugin',
+        'npm',
+        'openbsd_package',
+        'openbsd_pkg',
+        'package',
+        'pacman',
+        'pear',
+        'pip',
+        'pkg5',
+        'pkgutil',
+        'portage',
+        'slackpkg',
+        'sorcery',
+        'swdepot',
+        'win_chocolatey',
+        'yarn',
+        'yum',
+        'zypper',
+    ]
 
     def matchtask(self, file, task):
         return (task['action']['__ansible_module__'] in self._package_managers and
